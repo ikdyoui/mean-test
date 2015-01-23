@@ -1,0 +1,22 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <div class="col-md-12">
+    This is the hogehoges view.
+    <p>{{message||"hoge"}}</p>
+    <button class="btn btn-primary" ng-click="addHello()">Add Hello</button>
+    <button class="btn" ng-click="rmString()">Remove String</button>
+  </div>
+  <div>
+    <hello fname="person1.fname" lname="person.lname"/>,
+    <react-component name="Hello" props="person" />
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p>Angular Fullstack v2.0.13 |
+        <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+         <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>
