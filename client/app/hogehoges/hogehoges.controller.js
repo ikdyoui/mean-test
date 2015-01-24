@@ -12,7 +12,7 @@ angular.module('meanTestApp')
       if ($scope.message > "") {
         $scope.message += ' ';
       }
-      $scope.message += 'Hello3';
+      $scope.message += 'Hello4';
     };
 
     $scope.rmString = function() {
