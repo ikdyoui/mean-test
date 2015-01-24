@@ -9,7 +9,7 @@ angular.module('meanTestApp')
     $scope.person1 = { fname: 'Bruce', lname: 'Banner' };
 
     $scope.addHello = function() {
-      if ($scope.message > "") {
+      if ($scope.message > '') {
         $scope.message += ' ';
       }
       $scope.message += 'Hello6';
@@ -20,7 +20,7 @@ angular.module('meanTestApp')
       if (msglen > 0) {
         $scope.message = $scope.message.substr(0, msglen-1);
       } else {
-        $scope.message = "";
+        $scope.message = '';
       }
     };
 
@@ -32,7 +32,7 @@ angular.module('meanTestApp')
   //$scope.person1 = { fname: 'Bruce', lname: 'Banner' };
   //})
 
-.value( "Hello", React.createClass( {
+.value( 'Hello', React.createClass( {
   propTypes: {
     fname: React.PropTypes.string.isRequired,
     lname: React.PropTypes.string.isRequired
