@@ -12,7 +12,7 @@ angular.module('meanTestApp')
       if ($scope.message > '') {
         $scope.message += ' ';
       }
-      $scope.message += 'Hello6';
+      $scope.message += 'Hello8';
     };
 
     $scope.rmString = function() {
@@ -39,13 +39,18 @@ angular.module('meanTestApp')
   },
 
   render: function() {
-    return React.DOM.span( null,
-                          'Hello ' + this.props.fname + ' ' + this.props.lname
-                         );
+    return React.DOM.div( null,
+      React.DOM.p(null,'Hello ' + this.props.fname + ' ' + this.props.lname),
+      React.DOM.p(null,'Hello ' + this.props.fname + ' ' + this.props.lname),
+      React.DOM.p(null,'Hello ' + this.props.fname + ' ' + this.props.lname)
+    );
   }
 } ) )
 
 .directive( 'hello', function( reactDirective ) {
+  return reactDirective( 'Hello' );
+} )
+.directive( 'hello2', function( reactDirective ) {
   return reactDirective( 'Hello' );
 } )
   
