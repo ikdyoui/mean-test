@@ -27,7 +27,9 @@ angular.module('meanTestApp')
 })
 
 .value('Hello', React.createClass({
-  propTypes: { fname: React.PropTypes.string.isRequired, lname: React.PropTypes.string.isRequired },
+  propTypes: {
+    fname: React.PropTypes.string.isRequired, lname: React.PropTypes.string.isRequired
+  },
 
 render: function() {
   var d = React.DOM;
