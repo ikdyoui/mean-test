@@ -45,6 +45,7 @@ render: function() {
     d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname)
     );
 }
+
 }))
 
 .directive('hello', function( reactDirective ) {
