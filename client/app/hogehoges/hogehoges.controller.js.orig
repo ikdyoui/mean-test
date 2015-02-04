@@ -39,6 +39,22 @@ angular.module('meanTestApp')
   },
 
   render: function() {
+<<<<<<< HEAD
+    var s = React.DOM.div( null,
+      React.DOM.div( null,
+        React.DOM.ul( null,
+          React.DOM.li( null , 'hoge'),
+          React.DOM.li( null , 'fuga'),
+          React.DOM.li( null , 'geho')
+        )
+      ),
+      React.DOM.p(null,'Hello ' + this.props.fname + ' ' + this.props.lname),
+      React.DOM.p(null,'Hello ' + this.props.fname + ' ' + this.props.lname),
+      React.DOM.p(null,'Hello ' + this.props.fname + ' ' + this.props.lname),
+      React.DOM.p(null,'Hello2 ' + this.props.fname + ' ' + this.props.lname)
+    );
+    return s;
+=======
     var d = React.DOM;
     return d.div(null,
                    d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname),
@@ -52,6 +68,7 @@ angular.module('meanTestApp')
                          d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname),
                          d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname)
                   );
+>>>>>>> origin/master
   }
 } ) )
 
