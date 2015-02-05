@@ -46,7 +46,7 @@ render: function() {
     );
 }
 }))
-.directive('hello', function( reactDirective ) {
+.directive('hello', function(reactDirective) {
   return reactDirective('Hello');
 })
 
@@ -70,7 +70,7 @@ render: function() {
     );
 }
 }))
-.directive('hello2', function( reactDirective ) {
+.directive('hello2', function(reactDirective) {
   return reactDirective('Hello2');
 })
 
