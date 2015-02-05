@@ -45,11 +45,34 @@ render: function() {
     d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname)
     );
 }
+}))
 
+.value('Hello2', React.createClass({
+  propTypes: {
+    fname: React.PropTypes.string.isRequired, lname: React.PropTypes.string.isRequired
+  },
+
+render: function() {
+  var d = React.DOM;
+  return d.div(null,
+    d.ul({ className: 'list-group' },
+      d.li({ className: 'list-group-item' }, 'hoge'),
+      d.li({ className: 'list-group-item' }, 'fuga'),
+      d.li({ className: 'list-group-item' }, 'fuga'),
+      d.li({ className: 'list-group-item' }, 'hoge')
+      ),
+    d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname),
+    d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname),
+    d.p(null, 'Hello ' + this.props.fname + ' ' + this.props.lname)
+    );
+}
 }))
 
 .directive('hello', function( reactDirective ) {
   return reactDirective('Hello');
+})
+.directive('hello2', function( reactDirective ) {
+  return reactDirective('Hello2');
 })
 
 ;
