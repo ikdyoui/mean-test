@@ -46,6 +46,9 @@ render: function() {
     );
 }
 }))
+.directive('hello', function( reactDirective ) {
+  return reactDirective('Hello');
+})
 
 .value('Hello2', React.createClass({
   propTypes: {
@@ -67,10 +70,6 @@ render: function() {
     );
 }
 }))
-
-.directive('hello', function( reactDirective ) {
-  return reactDirective('Hello');
-})
 .directive('hello2', function( reactDirective ) {
   return reactDirective('Hello2');
 })
