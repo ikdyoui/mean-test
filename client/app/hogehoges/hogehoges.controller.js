@@ -14,6 +14,7 @@ angular.module('meanTestApp')
       $scope.message += ' ';
     }
     $scope.message += 'Hello8';
+    $scope.person['fname'] += 'Hello8';
   };
 
   $scope.rmString = function() {
