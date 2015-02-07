@@ -9,6 +9,7 @@ angular.module('meanTestApp')
   $scope.person = { fname: 'Clark', lname: 'Kent' };
   $scope.person1 = { fname: 'Bruce', lname: 'Banner' };
 
+
   $scope.addHello = function() {
     if ($scope.message > '') {
       $scope.message += ' ';
