@@ -49,11 +49,11 @@ module.exports = function (grunt) {
         }
       }
     },
-    open: {
-      server: {
-        url: 'http://localhost:<%= express.options.port %>'
-      }
-    },
+    // open: {
+    //   server: {
+    //     url: 'http://localhost:<%= express.options.port %>'
+    //   }
+    // },
     watch: {
       injectJS: {
         files: [
