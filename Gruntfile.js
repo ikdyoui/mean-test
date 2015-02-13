@@ -49,11 +49,11 @@ module.exports = function (grunt) {
         }
       }
     },
-    // open: {
-    //   server: {
-    //     url: 'http://localhost:<%= express.options.port %>'
-    //   }
-    // },
+    open: {
+      server: {
+        url: 'http://localhost:<%= express.options.port %>'
+      }
+    },
     watch: {
       injectJS: {
         files: [
@@ -578,6 +578,19 @@ module.exports = function (grunt) {
       ]);
     }
 
+    // grunt.task.run([
+    //   'clean:server',
+    //   'env:all',
+    //   'injector:sass', 
+    //   'concurrent:server',
+    //   'injector',
+    //   'wiredep',
+    //   'autoprefixer',
+    //   'express:dev',
+    //   'wait',
+    //   'open',
+    //   'watch'
+    // ]);
     grunt.task.run([
       'clean:server',
       'env:all',
@@ -588,7 +601,6 @@ module.exports = function (grunt) {
       'autoprefixer',
       'express:dev',
       'wait',
-      'open',
       'watch'
     ]);
   });
