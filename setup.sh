@@ -1,2 +1,1 @@
-# bower install && npm install
-bower install
+bower install && npm install
